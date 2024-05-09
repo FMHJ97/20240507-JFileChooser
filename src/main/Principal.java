@@ -21,7 +21,7 @@ public class Principal extends JFrame {
 	 * Constructor.
 	 */
 	public Principal() {
-		super();
+		super("Manejo de Ficheros - Entrada y Salida");
 		
 		this.setBounds(100, 100, 800, 400);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
