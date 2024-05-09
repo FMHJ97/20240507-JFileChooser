@@ -4,7 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
 
 import utils.Apariencia;
-import view.PanelPrincipal;
+import view.PanelCopyDirectories;
+import view.PanelFindFiles;
 
 public class Principal extends JFrame {
 
@@ -26,9 +27,11 @@ public class Principal extends JFrame {
 		this.setBounds(100, 100, 800, 400);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		PanelPrincipal panelPrincipal = new PanelPrincipal();
+		PanelCopyDirectories panelCD = new PanelCopyDirectories();
+		PanelFindFiles panelFF = new PanelFindFiles();
 		
-		getJTabbedPane().addTab("Copiado de Carpetas", panelPrincipal);
+		getJTabbedPane().addTab("Copiado de Carpetas", panelCD);
+		getJTabbedPane().addTab("Búsqueda de Ficheros", panelFF);
 		getJTabbedPane().setSelectedIndex(0);
 		
 		this.getContentPane().add(tabbedPane);

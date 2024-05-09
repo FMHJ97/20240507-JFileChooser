@@ -24,7 +24,7 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JProgressBar;
 
-public class PanelPrincipal extends JPanel {
+public class PanelCopyDirectories extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private JTextField jtfCOrigen;
@@ -35,7 +35,7 @@ public class PanelPrincipal extends JPanel {
 	/**
 	 * Create the panel.
 	 */
-	public PanelPrincipal() {
+	public PanelCopyDirectories() {
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0};
