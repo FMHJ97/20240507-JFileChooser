@@ -30,7 +30,7 @@ public class DatosDeTabla {
 			// Obtenemos el nombre del fichero.
 			datos[i][0] = f.getName();
 			// Obtenemos el tamaño del fichero en KB.
-			datos[i][1] = f.length() /1024 + "KB";
+			datos[i][1] = (float) f.length() /1024 + "KB";
 			// Obtenemos la última fecha de modificación.
 			Date fecha = new Date(f.lastModified());
 			datos[i][2] = sdf.format(fecha);
