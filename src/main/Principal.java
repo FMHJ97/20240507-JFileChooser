@@ -7,6 +7,7 @@ import utils.Apariencia;
 import view.PanelCopyDirectories;
 import view.PanelFindFiles;
 import view.PanelSelectFilesBySize;
+import view.PanelSelectFilesBySizeAndFilter;
 
 public class Principal extends JFrame {
 
@@ -31,10 +32,12 @@ public class Principal extends JFrame {
 		PanelCopyDirectories panelCD = new PanelCopyDirectories();
 		PanelFindFiles panelFF = new PanelFindFiles();
 		PanelSelectFilesBySize panelSFS = new PanelSelectFilesBySize();
+		PanelSelectFilesBySizeAndFilter panel2Filter = new PanelSelectFilesBySizeAndFilter();
 		
 		getJTabbedPane().addTab("Copiado de Carpetas", panelCD);
 		getJTabbedPane().addTab("Búsqueda de Ficheros en Carpeta", panelFF);
 		getJTabbedPane().addTab("Selección de Ficheros por Tamaño", panelSFS);
+		getJTabbedPane().addTab("Selección de Ficheros por Tamaño y Filtrado Texto", panel2Filter);
 		getJTabbedPane().setSelectedIndex(0);
 		
 		this.getContentPane().add(tabbedPane);
